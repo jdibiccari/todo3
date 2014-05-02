@@ -1,0 +1,5 @@
+def encoder(phrase)
+	puts phrase.codepoints
+end
+
+encoder("Allison")
