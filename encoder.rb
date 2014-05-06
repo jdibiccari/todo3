@@ -1,9 +1,6 @@
-
+#Modified the encoder just a little for funsies
 def encode(phrase)
-	phrase.gsub("e", "sparkle")
-	phrase.gsub("i", "rainbows")
-	phrase.gsub("a", "ponies")
-	phrase.gsub("y", "puppies!")
+	phrase.gsub!(/[eiay]/, "e" => "sparkle", "i" => "rainbows", "a" => "ponies", "y" => "puppies!")
 end
 
-encode("Happy Berthday")
+puts encode("Happy Berthday")
